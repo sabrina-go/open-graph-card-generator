@@ -9,6 +9,10 @@ function buildEnv() {
       host: process.env.HOST || 'localhost',
       logger: true,
     },
+
+    card: {
+      base64Image: process.env.BASE64_CARD_IMAGE,
+    },
   };
 
   if (process.env.NODE_ENV === 'test') {
